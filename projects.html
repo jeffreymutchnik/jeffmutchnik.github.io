@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects - Jeffrey Mutchnik's personal and professional projects in marketing technology and automation.">
+  <title>Projects - Jeffrey Mutchnik</title>
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <style>
+    .project-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-gray-200);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all var(--transition-normal);
+    }
+    .project-card:hover {
+      border-color: var(--color-navy);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .project-image {
+      background: var(--color-gray-100);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-gray-400);
+      font-size: 3rem;
+    }
+    .project-content {
+      padding: var(--spacing-lg);
+    }
+    .project-content h3 {
+      margin-bottom: var(--spacing-sm);
+    }
+    .project-content p {
+      color: var(--color-gray-600);
+      margin-bottom: var(--spacing-md);
+    }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-xs);
+    }
+    .project-tag {
+      background: var(--color-gray-100);
+      color: var(--color-gray-600);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+    .coming-soon {
+      text-align: center;
+      padding: var(--spacing-2xl);
+      background: var(--color-gray-100);
+      border-radius: 8px;
+      margin-top: var(--spacing-xl);
+    }
+    .coming-soon h3 {
+      margin-bottom: var(--spacing-sm);
+    }
+    .coming-soon p {
+      color: var(--color-gray-600);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Jeffrey Mutchnik</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="case-studies/index.html">Case Studies</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Projects</h1>
+      <p>Personal projects exploring marketing technology, automation, and emerging technologies.</p>
+    </div>
+  </header>
+
+  <!-- Projects Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <span>&#128187;</span>
+          </div>
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>This portfolio site built with vanilla HTML, CSS, and JavaScript. Responsive design with clean typography matching my resume aesthetic.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <span>&#128200;</span>
+          </div>
+          <div class="project-content">
+            <h3>Resume Variant System</h3>
+            <p>Multi-variant resume system with ATS optimization, PDF generation via Puppeteer, and targeted versions for different roles.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Puppeteer</span>
+              <span class="project-tag">ATS Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <span>&#127968;</span>
+          </div>
+          <div class="project-content">
+            <h3>Home Automation</h3>
+            <p>Smart home automation integrating various IoT devices and platforms for improved efficiency and convenience.</p>
+            <div class="project-tags">
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Automation</span>
+              <span class="project-tag">API Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <span>&#129302;</span>
+          </div>
+          <div class="project-content">
+            <h3>AI Marketing Tools</h3>
+            <p>Exploring AI-powered tools (ChatGPT, Claude) for marketing automation, content creation, and workflow optimization.</p>
+            <div class="project-tags">
+              <span class="project-tag">AI/ML</span>
+              <span class="project-tag">ChatGPT</span>
+              <span class="project-tag">Claude</span>
+              <span class="project-tag">Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coming Soon -->
+      <div class="coming-soon">
+        <h3>More Projects Coming Soon</h3>
+        <p>Currently working on additional projects exploring Python, API integrations, and marketing automation tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Jeffrey Mutchnik</h4>
+          <p>Marketing Technology Manager with 8+ years of experience in B2B healthcare technology. Specializing in HubSpot, Salesforce, and marketing automation.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="case-studies/index.html">Case Studies</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:jmutchnik21@gmail.com">jmutchnik21@gmail.com</a></li>
+            <li><a href="tel:+18477679719">(847) 767-9719</a></li>
+            <li>Chicago, IL</li>
+            <li><a href="https://linkedin.com/in/jeffrey-mutchnik" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jeffrey Mutchnik. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
